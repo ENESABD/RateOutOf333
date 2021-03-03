@@ -83,6 +83,22 @@ header {
     color:rgb(100, 100, 100);
 }
 
+@media only screen and (max-width: 768px){
+
+    #navitems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #navitems li{
+        width:100%;
+    }
+
+    header{
+        position: relative;
+    }
+}
+
 /* Showcase */
 
 #showcase {
@@ -99,7 +115,7 @@ header {
 }
 
 #welcome{
-    width: 700px;
+    width: 40%;
     font-family: 'Lobster Two', cursive;
     color: rgb(92, 83, 0);
     font-size: 80px;
@@ -108,7 +124,7 @@ header {
 
 #description{
     padding-left: 10px;
-    width: 600px;
+    width: 35%;
     line-height: 1.2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -134,6 +150,24 @@ header {
   
 .button a:hover, .button a:active {
     background-color: rgb(92, 83, 0);
+}
+
+
+@media only screen and (max-width: 768px){
+    #showcase{
+        display: block;
+        background-color: rgb(185, 255, 255);
+        background-image: none;
+    }
+
+    #description{
+        width:90%;
+    }
+
+    #welcome{
+        line-height: 1.1;
+        font-size: 60px;
+    }    
 }
 
 
@@ -189,6 +223,19 @@ header {
 }
 
 
+@media only screen and (max-width: 768px){
+
+    #features{
+        flex-direction: column;
+    }
+
+    .feature{
+        width:90%;
+        font-size: 20px;
+    }
+}
+
+
 /* Download */
 
 #download-bg{
@@ -217,6 +264,18 @@ header {
 #download iframe{
     width:100%;
     border: none;
+}
+
+@media only screen and (max-width: 768px){
+
+    iframe{
+        height: 700px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #download-bg{
+        padding:1%;
+    }
 }
 
 /* More */
@@ -316,23 +375,14 @@ header {
     margin-top:5%;
 }
 
-@media screen and (max-width: 800px) { 
- 
-    body { 
-    font-size: 1.5em; 
+@media only screen and (max-width: 768px){
+    #more{
+        padding:10px;
+    }
 
-    } 
-     
-    img { 
-        width: 100%; 
-        height: auto; 
-    } 
-     
-     
-    div { 
-        float: none; 
-        width: 100%; 
-        height: auto;	 
-    }    
-     
-    } 
+    #sponsor{
+        width:80%;
+        height:auto;
+    }
+}
+
